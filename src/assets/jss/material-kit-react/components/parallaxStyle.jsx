@@ -1,15 +1,20 @@
-const parallaxStyle = {
+const parallaxStyle = theme => ({
   parallax: {
     height: "90vh",
     overflow: "hidden",
     position: "relative",
     backgroundPosition: "center center",
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     margin: "0",
     padding: "0",
+    position: "relative",
     border: "0",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      backgroundPositionX: "-33rem"
+    }
   },
   filter: {
     "&:before": {
@@ -29,6 +34,6 @@ const parallaxStyle = {
   small: {
     height: "380px"
   }
-};
+});
 
 export default parallaxStyle;

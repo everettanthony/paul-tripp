@@ -21,8 +21,10 @@ const aboutStyle = theme => ({
   },
   aboutTitle: {
   	color: "#000",
+    fontSize: "2.25rem",
   	fontWeight: "600",
     [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem",
     	lineHeight: "1.1",
 		  margin: "0 0 16px"
     }
@@ -68,13 +70,13 @@ const aboutStyle = theme => ({
   	width: "350px",
     [theme.breakpoints.down("sm")]: {
 		  margin: "6px 0 0",
-		  width: "257px"
+		  width: "100%"
     }  	
   },
   aboutPaulTitle: {
   	fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
-		  fontSize: "22px"
+		  fontSize: "20px"
     } 
   },
   aboutVideo: {
@@ -84,13 +86,13 @@ const aboutStyle = theme => ({
     width: "350px",
     [theme.breakpoints.down("sm")]: {
       margin: "6px 0 0",
-      width: "257px"
+      width: "100%"
     }   
   },
   aboutVideoTitle: {
     fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "22px"
+      fontSize: "20px"
     } 
   },
   video: {
@@ -98,8 +100,7 @@ const aboutStyle = theme => ({
     width: "343px",
     height: "193px",
     [theme.breakpoints.down("sm")]: {
-      width: "261px",
-      height: "147px",
+      width: "100%",
       marginBottom: "20px"
     } 
   }

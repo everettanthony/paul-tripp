@@ -4,7 +4,11 @@ const componentsStyle = theme => ({
   container,
   brand: {
     color: "#FFFFFF",
-    textAlign: "left"
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      position: "relative",
+      zIndex: "9"
+    }
   },
   title: {
     fontSize: "4.2rem",
@@ -39,6 +43,18 @@ const componentsStyle = theme => ({
   },
   textCenter: {
     textAlign: "center"
+  },
+  plaxOverlay: {
+    background: "rgba(20, 65, 126, .95)",
+    display: "none",
+    height: "100%",
+    left: "0",
+    position: "absolute",
+    top: "0",
+    width: "100%",
+    [theme.breakpoints.down("sm")]: {
+      display: "block"
+    }
   }
 });
 

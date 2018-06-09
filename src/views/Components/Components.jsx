@@ -16,6 +16,7 @@ import SectionCarousel from "./Sections/SectionCarousel.jsx";
 import SectionAbout from "./Sections/SectionAbout.jsx";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
+import parallaxStyle from "assets/jss/material-kit-react/components/parallaxStyle.jsx";
 import logo from "assets/img/logo-small.png";
 import logoBlack from "assets/img/logo-small-black.png";
 
@@ -48,6 +49,7 @@ class Components extends React.Component {
               </GridItem>
             </GridContainer>
           </div>
+          <div className={classes.plaxOverlay}>&nbsp;</div>
         </Parallax>
 
         <div className={classNames(classes.main, classes.mainRaised)}>
